@@ -2,7 +2,7 @@
  * @Author: yhl
  * @Date: 2022-10-21 10:39:37
  * @LastEditors: Do not edit
- * @LastEditTime: 2023-06-09 13:49:35
+ * @LastEditTime: 2023-06-09 14:13:40
  * @FilePath: /low-code-js/src/components/formDesign/dateRange/DateRange.vue
 -->
 <template>
@@ -27,7 +27,7 @@ dayjs.extend(isBetween)
 const prop = defineProps(['isDesign', 'comData'])
 
 // 判断是否隐藏状态
-const isHidden = computed(() => !(prop.comData.state === 'H' && !isDesign))
+const isHidden = computed(() => !(prop.comData.state === 'H' && !prop.isDesign))
 
 // 限制时间方案
 const disabledDate = () => {

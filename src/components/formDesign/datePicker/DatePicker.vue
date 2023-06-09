@@ -2,7 +2,7 @@
  * @Author: yhl
  * @Date: 2022-10-21 10:39:37
  * @LastEditors: Do not edit
- * @LastEditTime: 2023-06-09 13:49:51
+ * @LastEditTime: 2023-06-09 14:13:36
  * @FilePath: /low-code-js/src/components/formDesign/datePicker/DatePicker.vue
 -->
 <template>
@@ -32,7 +32,7 @@ dayjs.extend(isBetween)
 const prop = defineProps(['isDesign', 'comData'])
 
 // 判断是否隐藏状态
-const isHidden = computed(() => !(prop.comData.state === 'H' && !isDesign))
+const isHidden = computed(() => !(prop.comData.state === 'H' && !prop.isDesign))
 
 // 判断当前展示哪个组件
 const whichMode = (mode) => prop.comData.pickMode.indexOf(mode) > -1

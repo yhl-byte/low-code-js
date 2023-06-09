@@ -2,7 +2,7 @@
  * @Author: yhl
  * @Date: 2022-10-09 17:34:42
  * @LastEditors: Do not edit
- * @LastEditTime: 2023-06-08 18:30:08
+ * @LastEditTime: 2023-06-09 14:14:02
  * @FilePath: /low-code-js/src/components/formDesign/text/Text.vue
 -->
 <template>
@@ -23,7 +23,7 @@ import { computed } from 'vue'
 const prop = defineProps(['isDesign', 'comData'])
 
 // 判断是否隐藏状态
-const isHidden = computed(() => !(prop.comData.state === 'H' && !isDesign))
+const isHidden = computed(() => !(prop.comData.state === 'H' && !prop.isDesign))
 
 </script>
 <style lang="less" scoped>

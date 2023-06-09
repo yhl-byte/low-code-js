@@ -2,7 +2,7 @@
  * @Author: yhl
  * @Date: 2022-10-21 10:39:37
  * @LastEditors: Do not edit
- * @LastEditTime: 2023-06-09 11:05:39
+ * @LastEditTime: 2023-06-09 14:14:10
  * @FilePath: /low-code-js/src/components/formDesign/upload/Upload.vue
 -->
 <template>
@@ -24,7 +24,7 @@ import { computed } from 'vue'
 const prop = defineProps(['isDesign', 'comData'])
 
 // 判断是否隐藏状态
-const isHidden = computed(() => !(prop.comData.state === 'H' && !isDesign))
+const isHidden = computed(() => !(prop.comData.state === 'H' && !prop.isDesign))
 
 </script>
 <style lang="less" scoped>

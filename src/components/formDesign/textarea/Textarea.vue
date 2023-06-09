@@ -2,7 +2,7 @@
  * @Author: yhl
  * @Date: 2022-10-10 14:08:31
  * @LastEditors: Do not edit
- * @LastEditTime: 2023-06-09 11:05:44
+ * @LastEditTime: 2023-06-09 14:14:07
  * @FilePath: /low-code-js/src/components/formDesign/textarea/Textarea.vue
 -->
 <template>
@@ -22,7 +22,7 @@ import { computed } from 'vue'
 const prop = defineProps(['isDesign', 'comData'])
 
 // 判断是否隐藏状态
-const isHidden = computed(() => !(prop.comData.state === 'H' && !isDesign))
+const isHidden = computed(() => !(prop.comData.state === 'H' && !prop.isDesign))
 
 </script>
 <style lang="less" scoped>
